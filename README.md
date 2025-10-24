@@ -7,7 +7,7 @@
 
 This repository implements a **complete face authentication system** that:
 - Detects faces in applicant photos using **RetinaFace**  
-- Aligns and crops detected faces using an **MTCNN-based aligner**
+- Aligns and crops detected faces using Inceptionresnetv2.
 - Generates **VGGFace2 embeddings** (via `facenet-pytorch`)
 - Stores and compares embeddings using **LangChain + FAISS**
 - Automatically classifies new applicants as **Duplicate**, **Review**, or **Unique**
@@ -65,12 +65,38 @@ will be automatically created when you clone the RetinaFace repository by **biub
 ## ⚙️ Next Steps
 
 Once your folder structure looks like the tree above:
-1. Activate your environment and install dependencies  
+Activate your environment and install dependencies  
    ```bash
    pip install -r requirements.txt
 
 
+---
+
+## ⚠️ Important Setup Note
+
+Before running the main pipeline, you must first **build your face embedding database** using the default steps below:
+
+```bash
+# Step 1: Detect and crop faces
+!python detect.py
+
+# Step 2: Generate embeddings using VGGFace2
+!python embeddings.py
+
+# Step 3: Build the face database from embeddings
+!python database.py
+
+# Step 4: Initialize LangChain FAISS vector store
+!python langchain_faiss.py
+
+
+# Step 5: Run the complete face authentication pipeline
+!python face_pipeline.py
+
 
 <img width="720" height="500" alt="image" src="https://github.com/user-attachments/assets/be97deca-ffdb-468a-9416-02642050837c" />
 
+📜 License
 
+This project is for educational and research purposes only under the IndiaAI Face Authentication Challenge 2025.
+For commercial or production use, please refer to the original RetinaFace and VGGFace2 licenses.
