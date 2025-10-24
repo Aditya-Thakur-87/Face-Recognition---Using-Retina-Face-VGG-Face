@@ -21,7 +21,7 @@ This prevents multiple submissions under different identities and ensures **fair
 | Step | Module | Description |
 |------|---------|-------------|
 | **1. Face Detection** | `RetinaFace (biubug6)` | Detects all visible faces in the input image |
-| **2. Face Alignment** | `MTCNN / face_alignment.py` | Normalizes face orientation, eyes alignment |
+| **2. Face Alignment** | `face_alignment.py` | Normalizes face orientation, eyes alignment |
 | **3. Embedding Generation** | `InceptionResnetV1 (VGGFace2)` | Converts each aligned face into a 512-D feature vector |
 | **4. Similarity Search** | `LangChain + FAISS` | Computes cosine similarity with database embeddings |
 | **5. Decision** | `face_pipeline.py` | Assigns unique ID if new, else returns existing duplicate ID |
@@ -30,6 +30,6 @@ This prevents multiple submissions under different identities and ensures **fair
 ---
 
 ## 📁 Project Structure
-<img width="1536" height="1024" alt="ChatGPT Image Oct 24, 2025, 09_57_38 PM" src="https://github.com/user-attachments/assets/4599750f-0b10-488a-841c-38d51e255c91" />
+<img width="500" height="500" alt="ChatGPT Image Oct 24, 2025, 09_57_38 PM" src="https://github.com/user-attachments/assets/4599750f-0b10-488a-841c-38d51e255c91" />
 
 
