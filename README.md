@@ -30,6 +30,47 @@ This prevents multiple submissions under different identities and ensures **fair
 ---
 
 ## 📁 Project Structure
+
+---
+
+### 🧩 Explanation of Key Folders
+
+| Folder | Purpose |
+|--------|----------|
+| **inference_image/** | Store your input applicant images for verification |
+| **face_database/** *(auto-created)* | Stores cropped faces assigned unique IDs |
+| **embeddings/** *(auto-created)* | Contains LangChain FAISS vectorstore for duplicate checks |
+| **weights/** | Place downloaded RetinaFace pretrained weights here |
+| **logs/** *(auto-created)* | Stores execution logs with timestamps |
+
+---
+
+### ⚠️ Other Folders
+
+Other supporting folders such as `models`, `utils`, `detection`, and `widerface_evaluate`  
+will be automatically created when you clone the RetinaFace repository by **biubug6**.
+
+---
+
+## ✅ What You Need to Add Manually
+
+| Required File | Location | Source |
+|----------------|-----------|---------|
+| `Resnet50_Final.pth` | `weights/` | Download from [biubug6/Pytorch_Retinaface](https://github.com/biubug6/Pytorch_Retinaface) |
+| `requirements.txt` | Root directory | List of dependencies |
+| `README.md` | Root directory | Documentation (this file) |
+
+---
+
+## ⚙️ Next Steps
+
+Once your folder structure looks like the tree above:
+1. Activate your environment and install dependencies  
+   ```bash
+   pip install -r requirements.txt
+
+
+
 <img width="720" height="500" alt="image" src="https://github.com/user-attachments/assets/be97deca-ffdb-468a-9416-02642050837c" />
 
 
