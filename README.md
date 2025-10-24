@@ -30,6 +30,6 @@ This prevents multiple submissions under different identities and ensures **fair
 ---
 
 ## 📁 Project Structure
-<img width="500" height="500" alt="ChatGPT Image Oct 24, 2025, 09_57_38 PM" src="https://github.com/user-attachments/assets/4599750f-0b10-488a-841c-38d51e255c91" />
+<img width="720" height="500" alt="image" src="https://github.com/user-attachments/assets/fae1cc4c-2554-4edb-aad1-27d178e9767a" />
 
 
