@@ -1,0 +1,9 @@
+torch          # matching your CUDA / CPU build
+facenet-pytorch
+opencv-python
+numpy
+faiss-cpu      # or faiss-gpu if you want GPU indexed search
+langchain-community
+langchain-core
+tqdm
+Pillow
