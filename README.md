@@ -92,10 +92,10 @@ Before running the main pipeline, you must first **build your face embedding dat
 
 # Step 5: Run the complete face authentication pipeline
 !python face_pipeline.py
-
-
+```
+----
 <img width="720" height="500" alt="image" src="https://github.com/user-attachments/assets/be97deca-ffdb-468a-9416-02642050837c" />
-
+----
 📜 License
 
 This project is for educational and research purposes only under the IndiaAI Face Authentication Challenge 2025.
